@@ -9,8 +9,20 @@
        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
        <!-- GoogleFonts links -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+         margin: 0;
+         padding: 0;
+            }
+        @media only screen and (max-width: 640px) {
+            .top_input {
+                display: none;
+                 }
+        }
+    </style>
 </head>
 <body class="bg-gray-100">
 
@@ -18,12 +30,12 @@
 
     <header class="bg-white divide-y ml-[72px]">
         <div class="flex justify-between items-center h-16 mx-4">
-            <div>
+            <div class="input_logo">
                 <img src="images/youtube-logo.jpg" alt="youtube-logo" class="w-24 h-14 mx-4">
             </div>
             <div class="flex items-center justify-center flex-grow">
-                <input type="text" placeholder="Search" class=" border border-gray-400 rounded-l-full h-8  px-3 py-2 focus:outline-none focus:border-blue-600 w-3/5" >
-                <button class="bg-gray-200 flex justify-center items-center h-8 w-16 rounded-r-full border border-gray-400 border-l-0 hover:bg-gray-300">
+                <input type="text" placeholder="Search" class=" top_input border border-gray-400 rounded-l-full h-8  px-3 py-2 focus:outline-none focus:border-blue-600 w-3/5" >
+                <button class="bg-gray-200 flex justify-center items-center h-8 w-10 md:w-16 lg:w-16 rounded-lg md:rounded-r-full lg:rounded-r-full border border-gray-400 border-l-0 hover:bg-gray-300">
                     <i class="material-icons">search</i>
                 </button>
                 <button class=" bg-gray-200 ml-4 rounded-full w-10 h-10 pt-1 hover:bg-gray-300">
@@ -66,7 +78,7 @@
 
         <!-- asideber section start -->
 
-    <aside class="fixed top-0 w-[72px] h-screen bg-white flex items-center flex-col mt-5">
+    <aside class="fixed top-0 w-[72px] h-screen bg-white flex items-center flex-col pt-5">
         <button id="menu-icon" class="w-full hover:bg-gray-200"><i class="material-icons">menu</i></button>
         
 
